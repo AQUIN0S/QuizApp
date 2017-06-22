@@ -8,6 +8,47 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    
+    <style name="QuestionLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginTop">@dimen/QuestionLayoutTopMargin</item>
+    </style>
+
+    <style name="Heading">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/colorPrimaryLight</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:padding">@dimen/HeadingPadding</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
+        <item name="android:textSize">@dimen/HeadingSize</item>
+    </style>
+
+    <style name="Question">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/QuestionBotMargin</item>
+        <item name="android:layout_marginLeft">@dimen/QuestionBegMargin</item>
+        <item name="android:layout_marginRight">@dimen/QuestionEndMargin</item>
+        <item name="android:layout_marginTop">@dimen/QuestionTopMargin</item>
+        <item name="android:textColor">@color/colorSecondaryText</item>
+        <item name="android:textSize">@dimen/QuestionSize</item>
+    </style>
+
+    <style name="Answer">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginLeft">@dimen/LeftMargin</item>
+        <item name="android:paddingLeft">@dimen/AnswerPadding</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="AnswerLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
 
 </resources>

@@ -8,7 +8,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical" >
+        android:orientation="vertical">
 
         <ImageView
             android:layout_width="match_parent"
@@ -22,23 +22,60 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorPrimaryDark"
-            android:text="@string/title"
-            android:gravity="center"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/TitleSize"
             android:fontFamily="sans-serif-medium"
-            android:padding="@dimen/TitlePadding" />
+            android:gravity="center"
+            android:padding="@dimen/TitlePadding"
+            android:text="@string/title"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/TitleSize" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/introduction"
-            android:padding="@dimen/IntroPadding"
-            android:textSize="@dimen/IntroSize"
             android:fontFamily="sans-serif-light"
+            android:padding="@dimen/IntroPadding"
+            android:text="@string/introduction"
+            android:textSize="@dimen/IntroSize"
             android:textStyle="bold" />
 
-        
+        <LinearLayout style="@style/QuestionLayout">
+
+            <TextView
+                style="@style/Heading"
+                android:text="@string/Header1" />
+
+            <TextView
+                style="@style/Question"
+                android:text="@string/Question1" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout style="@style/AnswerLayout">
+
+                    <RadioButton style="@style/Answer"
+                        android:text="@string/Answer1a"/>
+
+                    <RadioButton style="@style/Answer"
+                        android:text="@string/Answer1b"/>
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/AnswerLayout">
+
+                    <RadioButton style="@style/Answer"
+                        android:text="@string/Answer1c"/>
+
+                    <RadioButton style="@style/Answer"
+                        android:text="@string/Answer1d"/>
+
+                </LinearLayout>
+
+            </RadioGroup>
+
+
+        </LinearLayout>
 
     </LinearLayout>
 

@@ -4,8 +4,17 @@
     <dimen name="LeftMargin">8dp</dimen>
     <dimen name="RightMargin">8dp</dimen>
     <dimen name="BottomMargin">8dp</dimen>
-    <dimen name="TitleSize">24sp</dimen>
+    <dimen name="TitleSize">40sp</dimen>
     <dimen name="TitlePadding">8sp</dimen>
     <dimen name="IntroPadding">8sp</dimen>
     <dimen name="IntroSize">16sp</dimen>
+    <dimen name="HeadingSize">24sp</dimen>
+    <dimen name="HeadingPadding">8dp</dimen>
+    <dimen name="QuestionSize">16sp</dimen>
+    <dimen name="QuestionBegMargin">32dp</dimen>
+    <dimen name="QuestionEndMargin">16dp</dimen>
+    <dimen name="QuestionTopMargin">8dp</dimen>
+    <dimen name="QuestionBotMargin">8dp</dimen>
+    <dimen name="QuestionLayoutTopMargin">16dp</dimen>
+    <dimen name="AnswerPadding">8dp</dimen>
 </resources>

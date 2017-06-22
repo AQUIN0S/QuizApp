@@ -3,4 +3,17 @@
     <string name="title">Dragons Quiz!</string>
     <string name="introduction">Think you know your stuff about some of the most fearsome creatures
     of this earth? Take this quiz and find out!</string>
+    <string name="Header1">Question 1</string>
+    <string name="Header2">Question 2</string>
+    <string name="Header3">Question 3</string>
+    <string name="Header4">Question 4</string>
+    <string name="Header5">Question 5</string>
+    <string name="Header6">Question 6</string>
+    <string name="Header7">Question 7</string>
+    <string name="Header8">Question 8</string>
+    <string name="Question1">How large can a dragon grow to be?</string>
+    <string name="Answer1a">As large as a dog</string>
+    <string name="Answer1b">As large as a barn</string>
+    <string name="Answer1c">As large as a mountain</string>
+    <string name="Answer1d">Stars are said to be their breath still burning</string>
 </resources>
