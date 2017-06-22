@@ -50,27 +50,28 @@
 
             <RadioGroup
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-                <LinearLayout style="@style/AnswerLayout">
+                <RadioButton
+                    android:id="@+id/answer_1a"
+                    style="@style/Answer"
+                    android:text="@string/Answer1a"/>
 
-                    <RadioButton style="@style/Answer"
-                        android:text="@string/Answer1a"/>
+                <RadioButton
+                    android:id="@+id/answer_1b"
+                    style="@style/Answer"
+                    android:text="@string/Answer1b"/>
 
-                    <RadioButton style="@style/Answer"
-                        android:text="@string/Answer1b"/>
+                <RadioButton
+                    android:id="@+id/answer_1c"
+                    style="@style/Answer"
+                    android:text="@string/Answer1c"/>
 
-                </LinearLayout>
-
-                <LinearLayout style="@style/AnswerLayout">
-
-                    <RadioButton style="@style/Answer"
-                        android:text="@string/Answer1c"/>
-
-                    <RadioButton style="@style/Answer"
-                        android:text="@string/Answer1d"/>
-
-                </LinearLayout>
+                <RadioButton
+                    android:id="@+id/answer_1d"
+                    style="@style/Answer"
+                    android:text="@string/Answer1d"/>
 
             </RadioGroup>
 
