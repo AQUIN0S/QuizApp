@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.android.quizapp.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/dragon"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/title"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/TitleSize"
+            android:fontFamily="sans-serif-medium"
+            android:padding="@dimen/TitlePadding" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/introduction"
+            android:padding="@dimen/IntroPadding"
+            android:textSize="@dimen/IntroSize"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="bold" />
+
+        
+
+    </LinearLayout>
+
+</ScrollView>

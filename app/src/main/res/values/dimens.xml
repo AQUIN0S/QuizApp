@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="TopMargin">8dp</dimen>
+    <dimen name="LeftMargin">8dp</dimen>
+    <dimen name="RightMargin">8dp</dimen>
+    <dimen name="BottomMargin">8dp</dimen>
+    <dimen name="TitleSize">24sp</dimen>
+    <dimen name="TitlePadding">8sp</dimen>
+    <dimen name="IntroPadding">8sp</dimen>
+    <dimen name="IntroSize">16sp</dimen>
+</resources>
