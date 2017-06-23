@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">Quiz App</string>
-    <string name="title">Dragons Quiz!</string>
-    <string name="introduction">Think you know your stuff about some of the most fearsome creatures
-    of this earth? Take this quiz and find out!</string>
+    <string name="title">Mythological Quiz!</string>
+    <string name="introduction">Think you know your stuff about some of the fantastical histories
+        of the ancient eras? Take this quiz and find out!</string>
     <string name="Header1">Question 1</string>
     <string name="Header2">Question 2</string>
     <string name="Header3">Question 3</string>
@@ -11,9 +11,46 @@
     <string name="Header6">Question 6</string>
     <string name="Header7">Question 7</string>
     <string name="Header8">Question 8</string>
-    <string name="Question1">How large can a dragon grow to be?</string>
-    <string name="Answer1a">As large as a dog</string>
-    <string name="Answer1b">As large as a barn</string>
-    <string name="Answer1c">As large as a mountain</string>
-    <string name="Answer1d">Stars are said to be their breath still burning</string>
+    <string name="Question1">In which battle did 300 Spartan warriors stand against 500,000
+        Persians?</string>
+    <string name="Answer1a">The Battle of Troy</string>
+    <string name="Answer1b">The Battle of Thermopylae</string>
+    <string name="Answer1c">The Battle of Marathon</string>
+    <string name="Answer1d">The Battle of Salamis</string>
+    <string name="Question2">Who is the Egyptian deity of the sun?</string>
+    <string name="Answer2a">Horus</string>
+    <string name="Answer2b">Osiris</string>
+    <string name="Answer2c">Ra</string>
+    <string name="Answer2d">Isis</string>
+    <string name="Question3">In whose mythology did dragons appear?</string>
+    <string name="Answer3a">Greek</string>
+    <string name="Answer3b">European</string>
+    <string name="Answer3c">Asian</string>
+    <string name="Answer3d">All of the above</string>
+    <string name="Question4">What is considered the first Chinese Dynasty?</string>
+    <string name="Answer4a">The Shang Dynasty</string>
+    <string name="Answer4b">The Qin Dynasty</string>
+    <string name="Answer4c">The Chou (Zhou) Dynasty</string>
+    <string name="Answer4d">The Xia Dynasty</string>
+    <string name="Question5">What is considered the first Chinese Dynasty?</string>
+    <string name="Answer5a">The Shang Dynasty</string>
+    <string name="Answer5b">The Qin Dynasty</string>
+    <string name="Answer5c">The Chou (Zhou) Dynasty</string>
+    <string name="Answer5d">The Xia Dynasty</string>
+    <string name="Question6">What is a myth defined as?</string>
+    <string name="Answer6a">A story that attempts to explain nature, creation and history</string>
+    <string name="Answer6b">A true story that passed on from generation to generation</string>
+    <string name="Answer6c">A story with monsters and gods</string>
+    <string name="Answer6d">Stories of famous people in history and their deeds</string>
+    <string name="Question7">Who is the king of the gods (called the All-Father) in Norse
+        mythology?</string>
+    <string name="Answer7a">Loki</string>
+    <string name="Answer7b">Thor</string>
+    <string name="Answer7c">Odin</string>
+    <string name="Answer7d">Baldr</string>
+    <string name="Question8">Who was the most brilliant architect in Greek mythology?</string>
+    <string name="Answer8a">Leonardo Da Vinci</string>
+    <string name="Answer8b">Diomedes</string>
+    <string name="Answer8c">Daedalus</string>
+    <string name="Answer8d">Perseus</string>
 </resources>
