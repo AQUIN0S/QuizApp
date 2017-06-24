@@ -22,11 +22,11 @@
     <string name="Answer2b">Osiris</string>
     <string name="Answer2c">Ra</string>
     <string name="Answer2d">Isis</string>
-    <string name="Question3">In whose mythology did dragons appear?</string>
-    <string name="Answer3a">Greek</string>
-    <string name="Answer3b">European</string>
-    <string name="Answer3c">Asian</string>
-    <string name="Answer3d">All of the above</string>
+    <string name="Question3">Who were among the twelve Olympians in Greek mythology?</string>
+    <string name="Answer3a">Poseidon</string>
+    <string name="Answer3b">Tyche</string>
+    <string name="Answer3c">Hera</string>
+    <string name="Answer3d">Iris</string>
     <string name="Question4">What is considered the first Chinese Dynasty?</string>
     <string name="Answer4a">The Shang Dynasty</string>
     <string name="Answer4b">The Qin Dynasty</string>
