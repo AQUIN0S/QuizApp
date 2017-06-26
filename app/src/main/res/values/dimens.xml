@@ -17,4 +17,5 @@
     <dimen name="QuestionBotMargin">8dp</dimen>
     <dimen name="QuestionLayoutTopMargin">16dp</dimen>
     <dimen name="AnswerPadding">8dp</dimen>
+    <dimen name="ButtonTopMargin">24dp</dimen>
 </resources>

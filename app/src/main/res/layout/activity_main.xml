@@ -260,6 +260,22 @@
 
         </LinearLayout>
 
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/BottomMargin"
+            android:layout_marginEnd="@dimen/RightMargin"
+            android:layout_marginLeft="@dimen/LeftMargin"
+            android:layout_marginRight="@dimen/RightMargin"
+            android:layout_marginStart="@dimen/LeftMargin"
+            android:layout_marginTop="@dimen/ButtonTopMargin"
+            android:background="@color/colorPrimary"
+            android:text="@string/SubmitButton"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/HeadingSize" />
+
     </LinearLayout>
 
 </ScrollView>
