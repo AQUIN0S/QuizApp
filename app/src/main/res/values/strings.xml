@@ -54,4 +54,5 @@
     <string name="Answer8c">Daedalus</string>
     <string name="Answer8d">Perseus</string>
     <string name="SubmitButton">Submit</string>
+    <string name="NotAllAnswered">Not all the questions have been answered - please go back and check your answers</string>
 </resources>
