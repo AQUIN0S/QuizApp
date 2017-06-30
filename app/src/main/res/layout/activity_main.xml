@@ -41,6 +41,7 @@
         <LinearLayout style="@style/QuestionLayout">
 
             <TextView
+                android:id="@+id/question_1_heading"
                 style="@style/Heading"
                 android:text="@string/Header1" />
 
@@ -79,6 +80,7 @@
         <LinearLayout style="@style/QuestionLayout">
 
             <TextView
+                android:id="@+id/question_2_heading"
                 style="@style/Heading"
                 android:text="@string/Header2" />
 
@@ -117,6 +119,7 @@
         <LinearLayout style="@style/QuestionLayout">
 
             <TextView
+                android:id="@+id/question_3_heading"
                 style="@style/Heading"
                 android:text="@string/Header3" />
 
@@ -149,6 +152,7 @@
         <LinearLayout style="@style/QuestionLayout">
 
             <TextView
+                android:id="@+id/question_4_heading"
                 style="@style/Heading"
                 android:text="@string/Header4" />
 
@@ -187,6 +191,7 @@
         <LinearLayout style="@style/QuestionLayout">
 
             <TextView
+                android:id="@+id/question_5_heading"
                 style="@style/Heading"
                 android:text="@string/Header5" />
 
@@ -225,6 +230,7 @@
         <LinearLayout style="@style/QuestionLayout">
 
             <TextView
+                android:id="@+id/question_6_heading"
                 style="@style/Heading"
                 android:text="@string/Header6" />
 
