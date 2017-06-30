@@ -2,11 +2,12 @@ package com.example.android.quizapp;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.CheckBox;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
+
+import java.util.ArrayList;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -48,45 +49,32 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.answer_5d) RadioButton correctAnswer5;
     @BindView(R.id.answer_6a) RadioButton correctAnswer6;
 
-    private RadioGroup[] radioGroupAnswerGroups = {
-            Answer1, Answer2, Answer4,
-            Answer5, Answer6
-    };
-    private RadioButton[] radioGroupCorrectAnswers = {
-            correctAnswer1, correctAnswer2, correctAnswer4,
-            correctAnswer5, correctAnswer6
-    };
-    private CheckBox[] question3CheckBoxAnswers = {
-            Answer3a, Answer3b, Answer3c,
-            Answer3d
-    };
-    private boolean[] question3CorrectCheckBoxAnswers = {
-            true, false, true,
-            false
-    };
+    private ArrayList<RadioGroup> radioGroupAnswerGroups = new ArrayList<>();
+    private ArrayList<RadioButton> radioGroupCorrectAnswers = new ArrayList<>();
+    private ArrayList<CheckBox> question3CheckBoxAnswers = new ArrayList<>();
+    private ArrayList<Boolean> question3CorrectCheckBoxAnswers = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
+        setRadioGroupAnswerGroups(new ArrayList<RadioGroup>());
+        setRadioGroupCorrectAnswers(new ArrayList<RadioButton>());
+        setQuestion3CheckBoxAnswers(new ArrayList<CheckBox>());
+        setQuestion3CorrectCheckBoxAnswers(new ArrayList<Boolean>());
     }
 
     @OnClick(R.id.submit_button)
     public void submitAnswers() {
 
-        /*
         if (checkAllQuestionsAnswered()) {
             boolean[] RGCorrectAnswers = checkRadioGroupCorrectAnswers();
             boolean[] CBCorrectAnswers = checkCheckBoxCorrectAnswers();
-            // TODO: Fix this area
         } else {
-        */
             Toast toast = Toast.makeText(this, R.string.NotAllAnswered, Toast.LENGTH_SHORT);
             toast.show();
-        /*
         }
-        */
     }
 
     /**
@@ -104,19 +92,53 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private boolean[] checkRadioGroupCorrectAnswers() {
-        boolean[] RGCorrectAnswers = new boolean[radioGroupAnswerGroups.length];
-        for (int i = 0; i < radioGroupAnswerGroups.length; i += 1) {
-            RGCorrectAnswers[i] = (radioGroupAnswerGroups[i].getCheckedRadioButtonId() == radioGroupCorrectAnswers[i].getId());
+        boolean[] RGCorrectAnswers = new boolean[radioGroupAnswerGroups.size()];
+        for (int i = 0; i < radioGroupAnswerGroups.size(); i += 1) {
+            RGCorrectAnswers[i] = (radioGroupAnswerGroups.get(i).getCheckedRadioButtonId() == radioGroupCorrectAnswers.get(i).getId());
         }
         return RGCorrectAnswers;
     }
 
     private boolean[] checkCheckBoxCorrectAnswers() {
-        boolean[] CBCorrectAnswers = new boolean[question3CheckBoxAnswers.length];
-        for (int i = 0; i < question3CheckBoxAnswers.length; i += 1) {
-            CBCorrectAnswers[i] = (question3CheckBoxAnswers[i].isChecked() == question3CorrectCheckBoxAnswers[i]);
+        boolean[] CBCorrectAnswers = new boolean[question3CheckBoxAnswers.size()];
+        for (int i = 0; i < question3CheckBoxAnswers.size(); i += 1) {
+            CBCorrectAnswers[i] = (question3CheckBoxAnswers.get(i).isChecked() == question3CorrectCheckBoxAnswers.get(i));
         }
         return CBCorrectAnswers;
+    }
+
+    public void setRadioGroupAnswerGroups(ArrayList<RadioGroup> radioGroupAnswerGroups) {
+        radioGroupAnswerGroups.add(Answer1);
+        radioGroupAnswerGroups.add(Answer2);
+        radioGroupAnswerGroups.add(Answer4);
+        radioGroupAnswerGroups.add(Answer5);
+        radioGroupAnswerGroups.add(Answer6);
+        this.radioGroupAnswerGroups = radioGroupAnswerGroups;
+    }
+
+    private void setRadioGroupCorrectAnswers(ArrayList<RadioButton> radioGroupCorrectAnswers) {
+        radioGroupCorrectAnswers.add(correctAnswer1);
+        radioGroupCorrectAnswers.add(correctAnswer2);
+        radioGroupCorrectAnswers.add(correctAnswer4);
+        radioGroupCorrectAnswers.add(correctAnswer5);
+        radioGroupCorrectAnswers.add(correctAnswer6);
+        this.radioGroupCorrectAnswers = radioGroupCorrectAnswers;
+    }
+
+    public void setQuestion3CheckBoxAnswers(ArrayList<CheckBox> question3CheckBoxAnswers) {
+        question3CheckBoxAnswers.add(Answer3a);
+        question3CheckBoxAnswers.add(Answer3b);
+        question3CheckBoxAnswers.add(Answer3c);
+        question3CheckBoxAnswers.add(Answer3d);
+        this.question3CheckBoxAnswers = question3CheckBoxAnswers;
+    }
+
+    public void setQuestion3CorrectCheckBoxAnswers(ArrayList<Boolean> question3CorrectCheckBoxAnswers) {
+        question3CorrectCheckBoxAnswers.add(true);
+        question3CorrectCheckBoxAnswers.add(false);
+        question3CorrectCheckBoxAnswers.add(true);
+        question3CorrectCheckBoxAnswers.add(false);
+        this.question3CorrectCheckBoxAnswers = question3CorrectCheckBoxAnswers;
     }
 
 }
