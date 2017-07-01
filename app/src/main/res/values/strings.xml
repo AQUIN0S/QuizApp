@@ -55,4 +55,6 @@
     <string name="Answer8d">Perseus</string>
     <string name="SubmitButton">Submit</string>
     <string name="NotAllAnswered">Not all the questions have been answered - please go back and check your answers</string>
+    <string name="ScoreMessage">Your score is:</string>
+    <string name="QuestionTotal">/6.0</string>
 </resources>

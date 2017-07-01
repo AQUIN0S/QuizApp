@@ -87,11 +87,13 @@ public class MainActivity extends AppCompatActivity {
     @OnClick(R.id.submit_button)
     public void submitAnswers() {
         if (checkAllQuestionsAnswered()) {
+            double score = 0.0;
             ArrayList<Boolean> RGCorrectAnswers = checkRadioGroupCorrectAnswers();
             ArrayList<Boolean> CBCorrectAnswers = checkQ3CheckBoxCorrectAnswers();
             for (int i = 0; i < radioGroupQuestionHeadings.size(); i += 1) {
                 if (RGCorrectAnswers.get(i)) {
                     radioGroupQuestionHeadings.get(i).setBackgroundColor(correctAnswerColour);
+                    score += 1.0;
                 } else {
                     radioGroupQuestionHeadings.get(i).setBackgroundColor(wrongAnswerColour);
                 }
@@ -101,6 +103,17 @@ public class MainActivity extends AppCompatActivity {
             } else {
                 question3Heading.setBackgroundColor(correctAnswerColour);
             }
+            for (boolean CorrectAnswer : CBCorrectAnswers) {
+                if (CorrectAnswer) {
+                    score += 0.25;
+                } else {
+                    score -= 0.25;
+                }
+            }
+            String message = getResources().getString(R.string.ScoreMessage) + " " + score +
+                    getResources().getString(R.string.QuestionTotal);
+            Toast toast = Toast.makeText(this, message, Toast.LENGTH_LONG);
+            toast.show();
         } else {
             Toast toast = Toast.makeText(this, R.string.NotAllAnswered, Toast.LENGTH_LONG);
             toast.show();
