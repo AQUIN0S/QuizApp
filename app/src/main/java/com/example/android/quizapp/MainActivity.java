@@ -106,8 +106,6 @@ public class MainActivity extends AppCompatActivity {
             for (boolean CorrectAnswer : CBCorrectAnswers) {
                 if (CorrectAnswer) {
                     score += 0.25;
-                } else {
-                    score -= 0.25;
                 }
             }
             String message = getResources().getString(R.string.ScoreMessage) + " " + score +
