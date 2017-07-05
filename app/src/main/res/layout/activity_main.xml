@@ -199,31 +199,15 @@
                 style="@style/Question"
                 android:text="@string/Question5" />
 
-            <RadioGroup
+            <EditText
                 android:id="@+id/answer_5"
-                style="@style/AnswerLayout">
-
-                <RadioButton
-                    android:id="@+id/answer_5a"
-                    style="@style/Answer"
-                    android:text="@string/Answer5a" />
-
-                <RadioButton
-                    android:id="@+id/answer_5b"
-                    style="@style/Answer"
-                    android:text="@string/Answer5b" />
-
-                <RadioButton
-                    android:id="@+id/answer_5c"
-                    style="@style/Answer"
-                    android:text="@string/Answer5c" />
-
-                <RadioButton
-                    android:id="@+id/answer_5d"
-                    style="@style/Answer"
-                    android:text="@string/Answer5d" />
-
-            </RadioGroup>
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/RightMargin"
+                android:layout_marginLeft="@dimen/LeftMargin"
+                android:layout_marginRight="@dimen/RightMargin"
+                android:layout_marginStart="@dimen/LeftMargin"
+                android:hint="@string/Question5Hint" />
 
         </LinearLayout>
 

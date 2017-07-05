@@ -32,11 +32,10 @@
     <string name="Answer4b">The Qin Dynasty</string>
     <string name="Answer4c">The Chou (Zhou) Dynasty</string>
     <string name="Answer4d">The Xia Dynasty</string>
-    <string name="Question5">What is considered the first Chinese Dynasty?</string>
-    <string name="Answer5a">The Shang Dynasty</string>
-    <string name="Answer5b">The Qin Dynasty</string>
-    <string name="Answer5c">The Chou (Zhou) Dynasty</string>
-    <string name="Answer5d">The Xia Dynasty</string>
+    <string name="Question5">The Romans adopted and renamed several Greek gods. What is the name of
+        the Roman version of Hermes?</string>
+    <string name="Question5Hint">Your Answer</string>
+    <string name="Answer5">Mercury</string>
     <string name="Question6">What is a myth defined as?</string>
     <string name="Answer6a">A story that attempts to explain nature, creation and history</string>
     <string name="Answer6b">A true story that passed on from generation to generation</string>
@@ -56,5 +55,5 @@
     <string name="SubmitButton">Submit</string>
     <string name="NotAllAnswered">Not all the questions have been answered - please go back and check your answers</string>
     <string name="ScoreMessage">Your score is:</string>
-    <string name="QuestionTotal">/6.0</string>
+    <string name="QuestionTotal">6.0</string>
 </resources>
