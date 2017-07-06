@@ -203,10 +203,10 @@
                 android:id="@+id/answer_5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/RightMargin"
-                android:layout_marginLeft="@dimen/LeftMargin"
-                android:layout_marginRight="@dimen/RightMargin"
-                android:layout_marginStart="@dimen/LeftMargin"
+                android:layout_marginEnd="@dimen/QuestionEndMargin"
+                android:layout_marginLeft="@dimen/QuestionBegMargin"
+                android:layout_marginRight="@dimen/QuestionEndMargin"
+                android:layout_marginStart="@dimen/QuestionBegMargin"
                 android:hint="@string/Question5Hint" />
 
         </LinearLayout>

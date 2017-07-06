@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
                 radioGroupQuestionHeadings.get(i).setBackgroundColor(wrongAnswerColour);
             }
         }
-        if (answer5.getText().toString().toLowerCase().replace(" ", "").equals(correctAnswer5.toLowerCase())) {
+        if (answer5.getText().toString().toLowerCase().trim().equals(correctAnswer5.toLowerCase())) {
             question5Heading.setBackgroundColor(correctAnswerColour);
             score += 1;
         } else {
