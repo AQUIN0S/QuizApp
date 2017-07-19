@@ -1,7 +1,7 @@
 # QuizApp
 Wanna take a quiz about ancient mythology? Jump right in!
 
-Status: Unfinished
+Status: Finished
 
 This app is quite simply a quiz of six multichoice questions that the user can answer and get feedback on.
 
